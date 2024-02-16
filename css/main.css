@@ -1,3 +1,21 @@
-.banner {
+.hero {
   background-color: #FEFAF5;
+  display: flex;
+  flex-direction: row;
+  height: 34rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.hero-section1__heading {
+  margin: 0rem;
+}
+
+.hero-section2 {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero-section2__image {
+  height: 450px;
 }/*# sourceMappingURL=main.css.map */

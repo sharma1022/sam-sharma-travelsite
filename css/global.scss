@@ -1,20 +1,37 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .primary-nav{
     display: flex;
     flex-direction: row;
     background-color: #FFFFFF;
     color: #335576;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
 
+    &__heading{
+        margin:0rem;
+    }
     &__list{
         display: flex;
         flex-direction: row;
         list-style: none;
     }
+
+    &__item{
+        padding-left: 1rem;
+    }
+
     &__link{
         text-decoration: none;
+        color: #000000;
 
         &--active{
             text-decoration: underline;
             text-decoration-color: #DB7A4E;
+            text-underline-offset: 0.6rem;
+            text-decoration-thickness: 0.3rem;
         }
     }
 }
