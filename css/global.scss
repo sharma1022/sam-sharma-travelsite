@@ -1,0 +1,20 @@
+.primary-nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    color: #335576;
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    &__link{
+        text-decoration: none;
+
+        &--active{
+            text-decoration: underline;
+            text-decoration-color: #DB7A4E;
+        }
+    }
+}

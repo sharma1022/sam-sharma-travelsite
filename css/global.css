@@ -1,1 +1,18 @@
-/*# sourceMappingURL=global.css.map */
+.primary-nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  color: #335576;
+}
+.primary-nav__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.primary-nav__link {
+  text-decoration: none;
+}
+.primary-nav__link--active {
+  text-decoration: underline;
+  text-decoration-color: #DB7A4E;
+}/*# sourceMappingURL=global.css.map */

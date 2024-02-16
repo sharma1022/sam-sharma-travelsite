@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Site</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
         <nav class="primary-nav">
             <h2 class="primary-nav__heading">Travel Site</h2>
             <ul class="primary-nav__list">
-                <a href="./index.html" class="primary-nav__link"><li class="primary-nav__item">Home</li></a>
+                <a href="./index.html" class="primary-nav__link primary-nav__link--active"><li class="primary-nav__item">Home</li></a>
                 <a href="./pages/hawaii.html" class="primary-nav__link"><li class="primary-nav__item">Hawaii</li></a>
                 <a href="./pages/iceland.html" class="primary-nav__link"><li class="primary-nav__item">Iceland</li></a>
                 <a href="./pages/greece.html" class="primary primary-nav__link"><li class="primary-nav__item">Greece</li></a>
             </ul>
         </nav>
-        <div>
-            <div>
-                <h1>Travelling Comes With Endless Discoveries</h1>
-                <p>Don't let your dreams be just dreams. Experience the world by booking a vaction with us now.</p>
-                <a href=""><button>Get Started</button></a>
-            </div>
-            <div>
+        <div class="banner">
+            <section class="banner-section1">
+                <h1 class="banner-section1__heading">Travelling Comes With Endless Discoveries</h1>
+                <p class="banner-section1__text">Don't let your dreams be just dreams. Experience the world by booking a vaction with us now.</p>
+                <a href="" class="banner-section1__link"><button class="banner-section1__button">Get Started</button></a>
+            </section>
+            <section class="banner__section2">
                 <img src="./assets/hero.png" alt="">
-            </div>
+            </section>
         </div>
     </header>
     <main>
