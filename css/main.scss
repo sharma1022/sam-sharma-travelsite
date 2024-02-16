@@ -5,12 +5,30 @@
     height: 34rem;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem;
+    padding: 2rem 5rem;
 }
 
 .hero-section1{
+    text-align: left;
+    color: #335576;
+    padding-right: 4rem;
+    width:42%;
     &__heading{
         margin: 0rem;
+        font-size: 2rem;
+    }
+    &__text{
+        margin: 2rem 0rem;
+    }
+    &__button{
+        background-color: #DB7A4E;
+        color: #FFFFFF;
+        border: 0;
+        border-radius: 100px;
+        justify-content: center;
+        text-align: center;
+        padding: 0.5rem 2rem;
+        vertical-align: middle;
     }
 }
 .hero-section2{
