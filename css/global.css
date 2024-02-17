@@ -15,6 +15,10 @@
 .primary-nav__heading {
   margin: 0rem;
 }
+.primary-nav__headinglink {
+  text-decoration: none;
+  color: #335576;
+}
 .primary-nav__list {
   display: flex;
   flex-direction: row;

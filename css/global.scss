@@ -14,6 +14,10 @@
   &__heading {
     margin: 0rem;
   }
+  &__headinglink{
+    text-decoration: none;
+    color: #335576;
+  }
   &__list {
     display: flex;
     flex-direction: row;
