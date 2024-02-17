@@ -1,82 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hawaii</title>
-</head>
-<body>
-        <header>
-            <nav>
-                <h2>Travel Site</h2>
-                <ul>
-                    <li>Home</li>
-                    <li>Hawaii</li>
-                    <li>Iceland</li>
-                    <li>Greece</li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <img src="../assets/hawaii.jpg" alt="Greece image">
-            <h1>Hawaii</h1>
-            <div>
-                <h2>Friday</h2>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                    <li>Snorkeling</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Saturday</h2>
-                <h2>Breakfast</h2>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                    <li>Snorkeling</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Sunday</h2>
-                <h2>Breakfast</h2>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                    <li>Snorkeling</li>
-                </ul>
-            </div>
-        </main>
-        <footer>
-            <section>
-                <h2>Contact</h2>
-                <p>EMAIL</p>
-                <p>info@travelsite.com</p>
-            </section>
-            <section>
-                <h2>Hours</h2>
-                <div>
-                    <p>Monday - Friday</p>
-                    <p>9:00 AM - 5:00 PM</p>
-                </div>
-                <div>
-                    <p>Saturday</p>
-                    <p>10:00 AM - 4:00 PM</p>
-                </div>
-                <div>
-                    <p>Sunday</p>
-                    <p>Closed</p>
-                </div>
-            </section>
-            <section>
-                <h2>Social</h2>
-                <img src="" alt="Instagram">
-                <img src="" alt="facebook">
-                <img src="" alt="Twitter">
-            </section>
-        </footer>
-</body>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/destinations.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="primary-nav">
+        <h2 class="primary-nav__heading">Travel Site</h2>
+        <ul class="primary-nav__list">
+          <a href="./index.html" class="primary-nav__link"
+            ><li class="primary-nav__item">Home</li></a
+          >
+          <a
+            href="./pages/hawaii.html"
+            class="primary-nav__link primary-nav__link--active"
+            ><li class="primary-nav__item">Hawaii</li></a
+          >
+          <a href="./pages/iceland.html" class="primary-nav__link"
+            ><li class="primary-nav__item">Iceland</li></a
+          >
+          <a href="./pages/greece.html" class="primary primary-nav__link"
+            ><li class="primary-nav__item">Greece</li></a
+          >
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="destination hawaii">
+        <h1 class="destination__heading">Hawaii</h1>
+        <div class="destination__container">
+          <div class="destination__card">
+            <h2 class="destination__day">Friday</h2>
+            <ul class="destination__list">
+              <li class="destination__item">Breakfast</li>
+              <li class="destination__item">Lunch</li>
+              <li class="destination__item">Dinner</li>
+              <li class="destination__item">Snorkeling</li>
+            </ul>
+          </div>
+          <div class="destination__card">
+            <h2 class="destination__day">Saturday</h2>
+            <ul class="destination__list">
+              <li class="destination__item">Breakfast</li>
+              <li class="destination__item">Lunch</li>
+              <li class="destination__item">Dinner</li>
+              <li class="destination__item">Snorkeling</li>
+            </ul>
+          </div>
+          <div class="destination__card">
+            <h2 class="destination__day">Sunday</h2>
+            <ul class="destination__list">
+              <li class="destination__item">Breakfast</li>
+              <li class="destination__item">Lunch</li>
+              <li class="destination__item">Dinner</li>
+              <li class="destination__item">Snorkeling</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="contact">
+        <h2 class="contact__heading">Contact</h2>
+        <p class="contact__text">EMAIL</p>
+        <p class="contact__email">info@travelsite.com</p>
+      </section>
+      <section class="hours">
+        <h2 class="hours__heading">Hours</h2>
+        <div class="hours__container">
+          <div class="hours__section">
+            <p class="hours__day">Monday - Friday</p>
+            <p class="hours__time">9:00 AM - 5:00 PM</p>
+          </div>
+          <div class="hours__section">
+            <p class="hours__day">Saturday</p>
+            <p class="hours__time">10:00 AM - 4:00 PM</p>
+          </div>
+          <div class="hours__section">
+            <p class="hours__day">Sunday</p>
+            <p class="hours__time">Closed</p>
+          </div>
+        </div>
+      </section>
+      <section class="social">
+        <h2 class="social__heading">Social</h2>
+        <img
+          class="social__icon"
+          src="./assets/Icons/icon-instagram.png"
+          alt="instagram"
+        />
+        <img
+          class="social__icon"
+          src="./assets/Icons/icon-facebook.png"
+          alt="facebook"
+        />
+        <img
+          class="social__icon"
+          src="./assets/Icons/icon-twitter.png"
+          alt="twitter"
+        />
+      </section>
+    </footer>
+  </body>
 </html>
