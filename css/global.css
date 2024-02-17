@@ -6,7 +6,7 @@
 .primary-nav {
   display: flex;
   flex-direction: row;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #335576;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,58 @@
 }
 .primary-nav__link--active {
   text-decoration: underline;
-  text-decoration-color: #DB7A4E;
+  text-decoration-color: #db7a4e;
   text-underline-offset: 0.6rem;
   text-decoration-thickness: 0.3rem;
+}
+
+.footer {
+  background-color: #fefaf5;
+  padding: 2rem 14rem;
+  color: #335576;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .contact__heading {
+  margin-bottom: 2rem;
+}
+.footer .contact__text {
+  color: #db7a4e;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footer .contact__email {
+  margin-top: 0rem;
+}
+.footer .hours__heading {
+  margin-bottom: 2rem;
+}
+.footer .hours__container {
+  display: flex;
+  flex-direction: row;
+}
+.footer .hours__section {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+.footer .hours__day {
+  color: #db7a4e;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-top: 0rem;
+  font-weight: bold;
+}
+.footer .hours__time {
+  margin-top: 0rem;
+}
+.footer .social__heading {
+  margin-bottom: 2.5rem;
+}
+.footer .social__icon {
+  height: 25px;
+  padding-right: 2rem;
 }/*# sourceMappingURL=global.css.map */

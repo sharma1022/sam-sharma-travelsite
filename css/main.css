@@ -53,15 +53,15 @@
   justify-content: center;
 }
 .destination .hawaii {
-  background-image: url("../assets/hawaii.jpg");
+  background-image: url("../assets/Images/hawaii.jpg");
   background-size: cover;
 }
 .destination .greece {
-  background-image: url("../assets/greece.jpg");
+  background-image: url("../assets/Images/greece.jpg");
   background-size: cover;
 }
 .destination .iceland {
-  background-image: url("../assets/iceland.jpg");
+  background-image: url("../assets/Images/iceland.jpg");
   background-size: cover;
 }
 .destination__item {
