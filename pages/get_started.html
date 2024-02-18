@@ -3,22 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Started</title>
+    <title>Get Started!</title>
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/get_started.css">
 </head>
 <body>
     <header>
         <nav class="primary-nav">
-            <a class="primary-nav__headinglink" href="./index.html"><h2 class="primary-nav__heading">Travel Site</h2></a>
+            <a class="primary-nav__headinglink" href="../index.html"><h2 class="primary-nav__heading">Travel Site</h2></a>
             <ul class="primary-nav__list">
-                <a href="./index.html" class="primary-nav__link primary-nav__link--active"><li class="primary-nav__item">Home</li></a>
-                <a href="./pages/hawaii.html" class="primary-nav__link"><li class="primary-nav__item">Hawaii</li></a>
-                <a href="./pages/iceland.html" class="primary-nav__link"><li class="primary-nav__item">Iceland</li></a>
-                <a href="./pages/greece.html" class="primary-nav__link"><li class="primary-nav__item">Greece</li></a>
+                <a href="../index.html" class="primary-nav__link primary-nav__link--active"><li class="primary-nav__item">Home</li></a>
+                <a href="./hawaii.html" class="primary-nav__link"><li class="primary-nav__item">Hawaii</li></a>
+                <a href="./iceland.html" class="primary-nav__link"><li class="primary-nav__item">Iceland</li></a>
+                <a href="./greece.html" class="primary-nav__link"><li class="primary-nav__item">Greece</li></a>
             </ul>
         </nav>
         </header>
         <main>
+            <div class="gstarted">
+                <section class="gstarted-section1">
+                    <img src="../assets/Images/hero.png" alt="Banner image" class="gstarted-section1__image">
+                </section>
+                <section class="gstarted-section2">
+                    <h1 class="gstarted__heading">Get Started!</h1>
+                    <p class="gstarted__text">Fill out this form and we'll get in touch with you.</p>
+                    <form class="form">
+                        <label for="destination" Destination>Your destination:</label>
+                        <select class="form__destination" name="destination" id="destination">
+                            <option value="hawaii">Hawaii</option>
+                            <option value="iceland">Iceland</option>
+                            <option value="greece">Greece</option>
+                        </select>
+                        <label for="fname">First Name:</label>
+                        <input class="form__text" type="text" name="fname" id="fname" placeholder="John">
+                        <label for="lname">Last Name:</label>
+                        <input class="form__text" type="text" name="lname" id="lname" placeholder="Doe">
+                        <label for="email">Email:</label>
+                        <input class="form__text" type="email" name="email" id="email" placeholder="example@domain.com">
+                        <input class="form__submit" type="submit" value="Submit">
+                    </form>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <section class="contact">
