@@ -66,13 +66,8 @@
         &__item{
             width:100%;
             height:100%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-            
             border-radius: 5px;
             box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
-    
         }
         &__link{
             text-decoration: none;
@@ -82,7 +77,17 @@
         }
         &__heading{
             color: #FFFFFF;
-            padding-right: 1.5rem;
+            width: 100%;
+            height:100%;
+            padding: 1rem 1rem;
+            margin: 0rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            &:hover{
+                backdrop-filter: blur(3px);
+            }
         }
     }
 }
