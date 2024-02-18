@@ -17,6 +17,9 @@
   &__headinglink{
     text-decoration: none;
     color: #335576;
+    &:hover{
+      filter: brightness(150%);
+  }
   }
   &__list {
     display: flex;

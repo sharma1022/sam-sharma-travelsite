@@ -1,6 +1,6 @@
 .gstarted {
   background-color: #FEFAF5;
-  padding: 2rem 4rem;
+  padding: 2rem 6rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,6 +15,7 @@
 }
 .gstarted-section2 {
   width: 42%;
+  padding-left: 5rem;
 }
 .gstarted__heading {
   color: #335576;
@@ -62,6 +63,17 @@ label {
   margin-top: 0.5rem;
   font-size: 1rem;
 }
+.form__message {
+  color: #335576;
+  background-color: #FEFAF5;
+  border-radius: 0.3rem;
+  border: 2px solid #335576;
+  width: 20rem;
+  height: 9rem;
+  margin: 0rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
 .form__submit {
   background-color: #DB7A4E;
   color: #FFFFFF;
@@ -72,4 +84,7 @@ label {
   padding: 0.5rem 2rem;
   vertical-align: middle;
   margin-top: 1rem;
+}
+.form__submit:hover {
+  filter: brightness(150%);
 }/*# sourceMappingURL=get_started.css.map */

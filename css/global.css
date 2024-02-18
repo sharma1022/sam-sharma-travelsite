@@ -19,6 +19,9 @@
   text-decoration: none;
   color: #335576;
 }
+.primary-nav__headinglink:hover {
+  filter: brightness(150%);
+}
 .primary-nav__list {
   display: flex;
   flex-direction: row;
