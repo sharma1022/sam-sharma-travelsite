@@ -16,6 +16,8 @@
 .gstarted-section2 {
   width: 42%;
   padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 .gstarted__heading {
   color: #335576;
@@ -85,4 +87,19 @@
 }
 .gstarted .form__submit:hover {
   filter: brightness(150%);
+}
+
+@media (max-width: 1067px) {
+  .gstarted {
+    padding: 1rem 0rem;
+    justify-content: center;
+  }
+  .gstarted-section1 {
+    display: none;
+  }
+  .gstarted-section2 {
+    width: 80%;
+    align-items: center;
+    padding: 0rem;
+  }
 }/*# sourceMappingURL=get_started.css.map */

@@ -49,12 +49,15 @@
 
 .footer {
   background-color: #fefaf5;
-  padding: 2rem 14rem;
+  padding: 2rem 12rem;
   color: #335576;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+.footer .contact {
+  padding: 0rem 1rem;
 }
 .footer .contact__heading {
   margin-bottom: 2rem;
@@ -67,6 +70,9 @@
 }
 .footer .contact__email {
   margin-top: 0rem;
+}
+.footer .hours {
+  padding: 0rem 1rem;
 }
 .footer .hours__heading {
   margin-bottom: 2rem;
@@ -90,6 +96,9 @@
 .footer .hours__time {
   margin-top: 0rem;
 }
+.footer .social {
+  padding: 0rem 1rem;
+}
 .footer .social__heading {
   margin-bottom: 2.5rem;
 }
@@ -98,6 +107,11 @@
   padding-right: 2rem;
 }
 
+@media (min-width: 992px) and (max-width: 1299px) {
+  .footer {
+    padding: 1rem 6rem;
+  }
+}
 @media (max-width: 991px) {
   .footer {
     flex-direction: column;
@@ -132,14 +146,16 @@
     text-align: center;
   }
   .primary-nav__item {
-    border-bottom: 1px solid #db7a4e;
+    border-bottom: 2px;
   }
   .primary-nav__link--active {
     text-decoration: none;
-    border-left: 1px solid #db7a4e;
+    border-left: 3px solid #db7a4e;
+    border-right: 3px solid #db7a4e;
   }
   .primary-nav__link:hover {
     text-decoration: none;
-    border-left: 1px solid #335576;
+    border-left: 3px solid #335576;
+    border-right: 3px solid #335576;
   }
 }/*# sourceMappingURL=global.css.map */
