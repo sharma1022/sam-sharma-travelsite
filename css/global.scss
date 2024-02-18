@@ -38,6 +38,12 @@
       text-underline-offset: 0.6rem;
       text-decoration-thickness: 0.3rem;
     }
+    &:hover{
+      text-decoration: underline;
+      color: #335576;
+      text-underline-offset: 0.6rem;
+      text-decoration-thickness: 0.3rem;
+    }
   }
 }
 .footer {
