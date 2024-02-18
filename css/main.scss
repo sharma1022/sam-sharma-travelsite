@@ -96,4 +96,26 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px){
+    .hero{
+        padding-right: 1rem;
+
+        .hero-section1{
+            padding-right: 2rem;
+            &__heading{
+                font-size: 1.5rem;
+            }
+        }
+        .hero-section2{
+            &__image{
+                height: 300px;
+            }
+        }
+    }
+    .recommendations{
+        .destination{
+            padding: 0rem;
+        }
+    }
+}
 

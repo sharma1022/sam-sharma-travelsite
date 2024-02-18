@@ -91,4 +91,22 @@
 .recommendations .destination__heading:hover {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    padding-right: 1rem;
+  }
+  .hero .hero-section1 {
+    padding-right: 2rem;
+  }
+  .hero .hero-section1__heading {
+    font-size: 1.5rem;
+  }
+  .hero .hero-section2__image {
+    height: 300px;
+  }
+  .recommendations .destination {
+    padding: 0rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -57,6 +57,14 @@
         margin: 1rem;
         padding: 1rem;
     }
-    
-
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .destination{
+        &__heading{
+            font-size: 3rem;
+        }
+        &__container{
+            padding:1rem 0rem;
+        }
+    }
 }

@@ -26,20 +26,18 @@
   color: #335576;
   margin: 0rem;
 }
-
-label {
+.gstarted label {
   font-size: 1.5rem;
   color: #335576;
   margin-top: 1rem;
 }
-
-.form {
+.gstarted .form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 1rem;
 }
-.form__destination {
+.gstarted .form__destination {
   height: 3rem;
   color: #335576;
   background-color: #FEFAF5;
@@ -52,7 +50,7 @@ label {
   margin-top: 0.5rem;
   font-size: 1rem;
 }
-.form__text {
+.gstarted .form__text {
   height: 3rem;
   color: #335576;
   background-color: #FEFAF5;
@@ -63,7 +61,7 @@ label {
   margin-top: 0.5rem;
   font-size: 1rem;
 }
-.form__message {
+.gstarted .form__message {
   color: #335576;
   background-color: #FEFAF5;
   border-radius: 0.3rem;
@@ -74,7 +72,7 @@ label {
   margin-top: 0.5rem;
   font-size: 1rem;
 }
-.form__submit {
+.gstarted .form__submit {
   background-color: #DB7A4E;
   color: #FFFFFF;
   border: 0;
@@ -85,6 +83,6 @@ label {
   vertical-align: middle;
   margin-top: 1rem;
 }
-.form__submit:hover {
+.gstarted .form__submit:hover {
   filter: brightness(150%);
 }/*# sourceMappingURL=get_started.css.map */

@@ -107,3 +107,32 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 991px){
+  .footer{
+    flex-direction: column;
+    padding: 1rem 8rem;
+    align-items: center;
+    text-align: center;
+
+    .contact{
+      &__heading{
+        margin-bottom: 1rem;
+      }
+    }
+    .hours{
+      &__heading{
+        margin-bottom: 1rem;
+      }
+    }
+    .social{
+      &__heading{
+        margin-bottom: 1rem;
+      }
+      &__icon{
+        padding: 0rem;
+        margin: 0rem 1rem;
+      }
+    }
+  }
+}

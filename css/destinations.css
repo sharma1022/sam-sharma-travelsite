@@ -59,4 +59,13 @@
   background-color: #fefaf5;
   margin: 1rem;
   padding: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .destination__heading {
+    font-size: 3rem;
+  }
+  .destination__container {
+    padding: 1rem 0rem;
+  }
 }/*# sourceMappingURL=destinations.css.map */
