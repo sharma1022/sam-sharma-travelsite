@@ -108,7 +108,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (max-width: 991px){
   .footer{
     flex-direction: column;
     padding: 1rem 8rem;
@@ -135,4 +135,32 @@
       }
     }
   }
+}
+@media (max-width: 767px){
+  .primary-nav{
+    flex-direction: column;
+    padding: 0rem;
+
+    &__list{
+      flex-direction: column;
+      padding: 0rem;
+      font-size: 1.5rem;
+      width: 100%;
+      text-align: center;
+    }
+    &__item{
+      border-bottom: 1px solid #db7a4e;
+    }
+    &__link{
+      &--active{
+        text-decoration: none;
+        border-left: 1px solid #db7a4e;
+      }
+      &:hover{
+        text-decoration: none;
+        border-left: 1px solid #335576;
+      }
+    }
+  }
+
 }

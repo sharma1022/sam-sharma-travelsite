@@ -109,4 +109,29 @@
   .recommendations .destination {
     padding: 0rem;
   }
+}
+@media (max-width: 767px) {
+  .hero {
+    height: 28rem;
+    flex-direction: column-reverse;
+  }
+  .hero .hero-section1 {
+    width: auto;
+    padding: 0%;
+  }
+  .hero .hero-section2__image {
+    height: 150px;
+  }
+  .recommendations .destination {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recommendations .destination__item {
+    width: 100%;
+  }
+  .recommendations .destination__link {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
