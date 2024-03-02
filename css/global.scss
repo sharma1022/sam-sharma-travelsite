@@ -1,15 +1,18 @@
+@use "./partials/variables";
+@use "./partials/media-query" as mediaQuery;
+
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
 }
 .primary-nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #ffffff;
   color: #335576;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 5rem;
+  padding: 0rem;
 
   &__heading {
     margin: 0rem;
@@ -23,45 +26,48 @@
   }
   &__list {
     display: flex;
-    flex-direction: row;
     list-style: none;
+    flex-direction: column;
+    padding: 0rem;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
   }
 
   &__item {
-    padding-left: 1rem;
+    padding: 0;
   }
 
   &__link {
     text-decoration: none;
     color: #000000;
 
-    &--active {
-      text-decoration: underline;
-      text-decoration-color: #db7a4e;
-      text-underline-offset: 0.6rem;
-      text-decoration-thickness: 0.3rem;
+    &--active{
+      text-decoration: none;
+      border-left: 3px solid #db7a4e;
+      border-right: 3px solid #db7a4e;
     }
     &:hover{
-      text-decoration: underline;
-      color: #335576;
-      text-underline-offset: 0.6rem;
-      text-decoration-thickness: 0.3rem;
+      text-decoration: none;
+      border-left: 3px solid #335576;
+      border-right: 3px solid #335576;
     }
   }
 }
 .footer {
   background-color: #fefaf5;
-  padding: 2rem 12rem;
   color: #335576;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem 8rem;
+  align-items: center;
+  text-align: center;
 
   .contact {
     padding: 0rem 1rem;
     &__heading {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     &__text {
       color: #db7a4e;
@@ -76,7 +82,7 @@
   .hours {
     padding: 0rem 1rem;
     &__heading {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     &__container {
       display: flex;
@@ -102,75 +108,85 @@
   .social {
     padding: 0rem 1rem;
     &__heading {
-      margin-bottom: 2.5rem;
+      margin-bottom: 1rem;
     }
     &__icon {
       height: 25px;
-      padding-right: 2rem;
+      padding: 0rem;
+      margin: 0rem 1rem;
     }
   }
 }
-@media (min-width: 992px) and (max-width: 1299px){
-  .footer{
-    padding:1rem 6rem;
+
+@include mediaQuery.tablet{
+  .primary-nav{
+    flex-direction: row;
+    padding: 0rem 5rem;
+
+    &__list{
+      flex-direction: row;
+      font-size: 1rem;
+      width: auto;
+    }
+    &__item{
+      padding-left: 1rem;
+    }
+    &__link {
+      &--active {
+        text-decoration: underline;
+        text-decoration-color: #db7a4e;
+        text-underline-offset: 0.6rem;
+        text-decoration-thickness: 0.3rem;
+        border: 0;
+      }
+      &:hover{
+        text-decoration: underline;
+        color: #335576;
+        text-underline-offset: 0.6rem;
+        text-decoration-thickness: 0.3rem;
+        border: 0;
+      }
+    }
   }
-  
-}
-@media (max-width: 991px){
   .footer{
-    flex-direction: column;
-    padding: 1rem 8rem;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    padding: 2rem 2rem;
+    text-align: left;
+    align-items: flex-start;
 
     .contact{
       &__heading{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
       }
     }
     .hours{
       &__heading{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
       }
+  }
+  .social{
+    &__heading{
+      margin-bottom: 2rem;
     }
+    &__icon{
+      padding-right: 2rem;
+      margin: 0;
+      margin-top: 1rem;
+      
+    }
+  }
+}
+}
+
+@include mediaQuery.desktop{
+  .footer{
+    padding: 2rem 12rem;
     .social{
-      &__heading{
-        margin-bottom: 1rem;
-      }
       &__icon{
-        padding: 0rem;
-        margin: 0rem 1rem;
+        margin-top: 1rem;
       }
     }
   }
 }
-@media (max-width: 767px){
-  .primary-nav{
-    flex-direction: column;
-    padding: 0rem;
 
-    &__list{
-      flex-direction: column;
-      padding: 0rem;
-      font-size: 1.5rem;
-      width: 100%;
-      text-align: center;
-    }
-    &__item{
-      border-bottom: 2px ;
-    }
-    &__link{
-      &--active{
-        text-decoration: none;
-        border-left: 3px solid #db7a4e;
-        border-right: 3px solid #db7a4e;
-      }
-      &:hover{
-        text-decoration: none;
-        border-left: 3px solid #335576;
-        border-right: 3px solid #335576;
-      }
-    }
-  }
 
-}

@@ -5,12 +5,12 @@
 
 .primary-nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #ffffff;
   color: #335576;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 5rem;
+  padding: 0rem;
 }
 .primary-nav__heading {
   margin: 0rem;
@@ -24,43 +24,46 @@
 }
 .primary-nav__list {
   display: flex;
-  flex-direction: row;
   list-style: none;
+  flex-direction: column;
+  padding: 0rem;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
 }
 .primary-nav__item {
-  padding-left: 1rem;
+  padding: 0;
 }
 .primary-nav__link {
   text-decoration: none;
   color: #000000;
 }
 .primary-nav__link--active {
-  text-decoration: underline;
-  text-decoration-color: #db7a4e;
-  text-underline-offset: 0.6rem;
-  text-decoration-thickness: 0.3rem;
+  text-decoration: none;
+  border-left: 3px solid #db7a4e;
+  border-right: 3px solid #db7a4e;
 }
 .primary-nav__link:hover {
-  text-decoration: underline;
-  color: #335576;
-  text-underline-offset: 0.6rem;
-  text-decoration-thickness: 0.3rem;
+  text-decoration: none;
+  border-left: 3px solid #335576;
+  border-right: 3px solid #335576;
 }
 
 .footer {
   background-color: #fefaf5;
-  padding: 2rem 12rem;
   color: #335576;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem 8rem;
+  align-items: center;
+  text-align: center;
 }
 .footer .contact {
   padding: 0rem 1rem;
 }
 .footer .contact__heading {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .footer .contact__text {
   color: #db7a4e;
@@ -75,7 +78,7 @@
   padding: 0rem 1rem;
 }
 .footer .hours__heading {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .footer .hours__container {
   display: flex;
@@ -100,62 +103,67 @@
   padding: 0rem 1rem;
 }
 .footer .social__heading {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 .footer .social__icon {
   height: 25px;
-  padding-right: 2rem;
+  padding: 0rem;
+  margin: 0rem 1rem;
 }
 
-@media (min-width: 992px) and (max-width: 1299px) {
-  .footer {
-    padding: 1rem 6rem;
-  }
-}
-@media (max-width: 991px) {
-  .footer {
-    flex-direction: column;
-    padding: 1rem 8rem;
-    align-items: center;
-    text-align: center;
-  }
-  .footer .contact__heading {
-    margin-bottom: 1rem;
-  }
-  .footer .hours__heading {
-    margin-bottom: 1rem;
-  }
-  .footer .social__heading {
-    margin-bottom: 1rem;
-  }
-  .footer .social__icon {
-    padding: 0rem;
-    margin: 0rem 1rem;
-  }
-}
-@media (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .primary-nav {
-    flex-direction: column;
-    padding: 0rem;
+    flex-direction: row;
+    padding: 0rem 5rem;
   }
   .primary-nav__list {
-    flex-direction: column;
-    padding: 0rem;
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
+    flex-direction: row;
+    font-size: 1rem;
+    width: auto;
   }
   .primary-nav__item {
-    border-bottom: 2px;
+    padding-left: 1rem;
   }
   .primary-nav__link--active {
-    text-decoration: none;
-    border-left: 3px solid #db7a4e;
-    border-right: 3px solid #db7a4e;
+    text-decoration: underline;
+    text-decoration-color: #db7a4e;
+    text-underline-offset: 0.6rem;
+    text-decoration-thickness: 0.3rem;
+    border: 0;
   }
   .primary-nav__link:hover {
-    text-decoration: none;
-    border-left: 3px solid #335576;
-    border-right: 3px solid #335576;
+    text-decoration: underline;
+    color: #335576;
+    text-underline-offset: 0.6rem;
+    text-decoration-thickness: 0.3rem;
+    border: 0;
+  }
+  .footer {
+    flex-direction: row;
+    padding: 2rem 2rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .footer .contact__heading {
+    margin-bottom: 2rem;
+  }
+  .footer .hours__heading {
+    margin-bottom: 2rem;
+  }
+  .footer .social__heading {
+    margin-bottom: 2rem;
+  }
+  .footer .social__icon {
+    padding-right: 2rem;
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 2rem 12rem;
+  }
+  .footer .social__icon {
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=global.css.map */
