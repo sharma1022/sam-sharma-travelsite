@@ -1,3 +1,172 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+.primary-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #335576;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem;
+}
+.primary-nav__heading {
+  margin: 0rem;
+}
+.primary-nav__headinglink {
+  text-decoration: none;
+  color: #335576;
+}
+.primary-nav__headinglink:hover {
+  filter: brightness(150%);
+}
+.primary-nav__list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding: 0rem;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+.primary-nav__item {
+  padding: 0;
+}
+.primary-nav__link {
+  text-decoration: none;
+  color: #000000;
+}
+.primary-nav__link--active {
+  text-decoration: none;
+  border-left: 3px solid #db7a4e;
+  border-right: 3px solid #db7a4e;
+}
+.primary-nav__link:hover {
+  text-decoration: none;
+  border-left: 3px solid #335576;
+  border-right: 3px solid #335576;
+}
+
+.footer {
+  background-color: #fefaf5;
+  color: #335576;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem 8rem;
+  align-items: center;
+  text-align: center;
+}
+.footer .contact {
+  padding: 0rem 1rem;
+}
+.footer .contact__heading {
+  margin-bottom: 1rem;
+}
+.footer .contact__text {
+  color: #db7a4e;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footer .contact__email {
+  margin-top: 0rem;
+}
+.footer .hours {
+  padding: 0rem 1rem;
+}
+.footer .hours__heading {
+  margin-bottom: 1rem;
+}
+.footer .hours__container {
+  display: flex;
+  flex-direction: row;
+}
+.footer .hours__section {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+.footer .hours__day {
+  color: #db7a4e;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-top: 0rem;
+  font-weight: bold;
+}
+.footer .hours__time {
+  margin-top: 0rem;
+}
+.footer .social {
+  padding: 0rem 1rem;
+}
+.footer .social__heading {
+  margin-bottom: 1rem;
+}
+.footer .social__icon {
+  height: 25px;
+  padding: 0rem;
+  margin: 0rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .primary-nav {
+    flex-direction: row;
+    padding: 0rem 5rem;
+  }
+  .primary-nav__list {
+    flex-direction: row;
+    font-size: 1rem;
+    width: auto;
+  }
+  .primary-nav__item {
+    padding-left: 1rem;
+  }
+  .primary-nav__link--active {
+    text-decoration: underline;
+    text-decoration-color: #db7a4e;
+    text-underline-offset: 0.6rem;
+    text-decoration-thickness: 0.3rem;
+    border: 0;
+  }
+  .primary-nav__link:hover {
+    text-decoration: underline;
+    color: #335576;
+    text-underline-offset: 0.6rem;
+    text-decoration-thickness: 0.3rem;
+    border: 0;
+  }
+  .footer {
+    flex-direction: row;
+    padding: 2rem 2rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .footer .contact__heading {
+    margin-bottom: 2rem;
+  }
+  .footer .hours__heading {
+    margin-bottom: 2rem;
+  }
+  .footer .social__heading {
+    margin-bottom: 2rem;
+  }
+  .footer .social__icon {
+    padding-right: 2rem;
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 2rem 12rem;
+  }
+  .footer .social__icon {
+    margin-top: 1rem;
+  }
+}
 .gstarted {
   background-color: #FEFAF5;
   padding: 2rem 6rem;
@@ -9,15 +178,17 @@
 .gstarted-section1 {
   -o-object-fit: contain;
      object-fit: contain;
+  display: none;
 }
 .gstarted-section1__image {
   height: 450px;
 }
 .gstarted-section2 {
-  width: 42%;
-  padding-left: 5rem;
+  width: 80%;
+  padding: 0rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .gstarted__heading {
   color: #335576;
@@ -89,17 +260,31 @@
   filter: brightness(150%);
 }
 
-@media (max-width: 1067px) {
+@media screen and (min-width: 768px) {
   .gstarted {
     padding: 1rem 0rem;
     justify-content: center;
   }
   .gstarted-section1 {
-    display: none;
+    display: block;
   }
   .gstarted-section2 {
-    width: 80%;
-    align-items: center;
-    padding: 0rem;
+    width: 42%;
+    align-items: flex-start;
+    padding-left: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gstarted {
+    padding: 1rem 0rem;
+    justify-content: center;
+  }
+  .gstarted-section1 {
+    display: block;
+  }
+  .gstarted-section2 {
+    width: 42%;
+    align-items: flex-start;
+    padding-left: 5rem;
   }
 }/*# sourceMappingURL=get_started.css.map */

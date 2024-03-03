@@ -1,3 +1,7 @@
+@use './partials/variables';
+@use "./partials/global";
+@use "./partials/media-query" as mediaQuery;
+
 .gstarted{
     background-color: #FEFAF5;
     padding: 2rem 6rem;
@@ -8,16 +12,19 @@
 
     &-section1{
         object-fit: contain;
+        display: none;
     
         &__image{
             height: 450px;
         }
     }
     &-section2{
-        width: 42%;
-        padding-left: 5rem;
+        
+        width: 80%;
+        padding: 0rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     &__heading{
         color: #335576;
@@ -89,17 +96,33 @@
         }
     }
 }
-@media(max-width: 1067px){
+
+@include mediaQuery.tablet{
     .gstarted{
         padding: 1rem 0rem;
         justify-content: center;
         &-section1{
-            display: none;
+            display: block; 
         }
         &-section2{
-            width: 80%;
-            align-items: center;
-            padding: 0rem;
+            width: 42%;
+            align-items: flex-start;
+            padding-left: 5rem;
+        }
+    }
+}
+
+@include mediaQuery.desktop{
+    .gstarted{
+        padding: 1rem 0rem;
+        justify-content: center;
+        &-section1{
+            display: block; 
+        }
+        &-section2{
+            width: 42%;
+            align-items: flex-start;
+            padding-left: 5rem;
         }
     }
 }

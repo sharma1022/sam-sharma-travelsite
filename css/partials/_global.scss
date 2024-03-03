@@ -1,5 +1,10 @@
-@use "./partials/variables";
-@use "./partials/media-query" as mediaQuery;
+@use "media-query" as mediaQuery;
+
+$blue: #335576;
+$orange: #db7a4e;
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
 
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;

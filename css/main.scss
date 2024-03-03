@@ -1,5 +1,5 @@
-@use './partials/variables';
 @use "./partials/media-query" as mediaQuery;
+@use "./partials/global";
 
 .hero{
     background-color: #FEFAF5;
