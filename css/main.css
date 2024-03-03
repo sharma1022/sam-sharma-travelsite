@@ -3,6 +3,17 @@
   box-sizing: border-box;
 }
 
+.btn, .hero .hero-section1__button {
+  background-color: #db7a4e;
+  color: #ffffff;
+  border-radius: 100px;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  width: 10rem;
+}
+
 .primary-nav {
   display: flex;
   flex-direction: column;
@@ -189,18 +200,12 @@
 .hero .hero-section1__text {
   margin: 2rem 0rem;
 }
-.hero .hero-section1__button {
-  background-color: #DB7A4E;
-  color: #FFFFFF;
-  border: 0;
-  border-radius: 100px;
-  justify-content: center;
-  text-align: center;
-  padding: 0.5rem 2rem;
-  vertical-align: middle;
-}
 .hero .hero-section1__button:hover {
   filter: brightness(150%);
+}
+.hero .hero-section1__link {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .hero .hero-section2 {
   -o-object-fit: contain;
