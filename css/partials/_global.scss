@@ -49,8 +49,11 @@
   }
 
   &__link {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: #000000;
+    width: 100%;
 
     &--active {
       text-decoration: none;

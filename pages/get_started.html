@@ -1,81 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Started!</title>
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/get_started.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/get_started.css" />
+  </head>
+  <body>
     <header>
-        <nav class="primary-nav">
-            <a class="primary-nav__headinglink" href="../index.html"><h2 class="primary-nav__heading">Travel Site</h2></a>
-            <ul class="primary-nav__list">
-                <a href="../index.html" class="primary-nav__link primary-nav__link--active"><li class="primary-nav__item">Home</li></a>
-                <a href="./hawaii.html" class="primary-nav__link"><li class="primary-nav__item">Hawaii</li></a>
-                <a href="./iceland.html" class="primary-nav__link"><li class="primary-nav__item">Iceland</li></a>
-                <a href="./greece.html" class="primary-nav__link"><li class="primary-nav__item">Greece</li></a>
-            </ul>
-        </nav>
-        </header>
-        <main>
-            <div class="gstarted">
-                <section class="gstarted-section1">
-                    <img src="../assets/Images/hero.png" alt="Banner image" class="gstarted-section1__image">
-                </section>
-                <section class="gstarted-section2">
-                    <h1 class="gstarted__heading">Get Started!</h1>
-                    <p class="gstarted__text">Fill out this form and we'll get in touch with you.</p>
-                    <form class="form">
-                        <label for="destination" Destination>Your destination:</label>
-                        <select class="form__destination" name="destination" id="destination">
-                            <option value="hawaii">Hawaii</option>
-                            <option value="iceland">Iceland</option>
-                            <option value="greece">Greece</option>
-                        </select>
-                        <label for="fname">First Name:</label>
-                        <input class="form__text" type="text" name="fname" id="fname" placeholder="John">
-                        <label for="lname">Last Name:</label>
-                        <input class="form__text" type="text" name="lname" id="lname" placeholder="Doe">
-                        <label for="email">Email:</label>
-                        <input class="form__text" type="email" name="email" id="email" placeholder="example@domain.com">
-                        <label for="message">Your message:</label>
-                        <textarea class="form__message" name="message" id="" cols="30" rows="10"></textarea>
-                        <input class="form__submit" type="submit" value="Submit">
-                    </form>
-                </section>
-            </div>
-        </main>
-        <footer class="footer">
-            <section class="contact">
-                <h2 class="contact__heading">Contact</h2>
-                <p class="contact__text">EMAIL</p>
-                <p class="contact__email">info@travelsite.com</p>
-            </section>
-            <section class="hours">
-                <h2 class="hours__heading">Hours</h2>
-                <div class="hours__container">
-                    <div class="hours__section">
-                        <p class="hours__day">Monday - Friday</p>
-                        <p class="hours__time">9:00 AM - 5:00 PM</p>
-                    </div>
-                    <div class="hours__section">
-                        <p class="hours__day">Saturday</p>
-                        <p class="hours__time">10:00 AM - 4:00 PM</p>
-                    </div>
-                    <div class="hours__section">
-                        <p class="hours__day">Sunday</p>
-                        <p class="hours__time">Closed</p>
-                    </div>
-                </div>
-            </section>
-            <section class="social">
-                <h2 class="social__heading">Social</h2>
-                    <img class="social__icon" src="../assets/Icons/icon-instagram.png" alt="instagram">
-                    <img class="social__icon" src="../assets/Icons/icon-facebook.png" alt="facebook">
-                    <img class="social__icon" src="../assets/Icons/icon-twitter.png" alt="twitter">
-            </section>
-        </footer>
-</body>
+      <nav class="primary-nav">
+        <a class="primary-nav__headinglink" href="../index.html"
+          ><h2 class="primary-nav__heading">Travel Site</h2></a
+        >
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item">
+            <a href="../index.html" class="primary-nav__link">Home</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="./hawaii.html" class="primary-nav__link">Hawaii</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="./iceland.html" class="primary-nav__link">Iceland</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="./greece.html" class="primary-nav__link">Greece</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="gstarted">
+        <div class="gstarted-section1">
+          <img
+            src="../assets/Images/hero.png"
+            alt="Banner image"
+            class="gstarted-section1__image"
+          />
+        </div>
+        <div class="gstarted-section2">
+          <h1 class="gstarted__heading">Get Started!</h1>
+          <p class="gstarted__text">
+            Fill out this form and we'll get in touch with you.
+          </p>
+          <form class="form">
+            <label for="destination">Your destination:</label>
+            <select
+              class="form__destination"
+              name="destination"
+              id="destination"
+            >
+              <option value="hawaii">Hawaii</option>
+              <option value="iceland">Iceland</option>
+              <option value="greece">Greece</option>
+            </select>
+            <label for="fname">First Name:</label>
+            <input
+              class="form__text"
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="John"
+            />
+            <label for="lname">Last Name:</label>
+            <input
+              class="form__text"
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Doe"
+            />
+            <label for="email">Email:</label>
+            <input
+              class="form__text"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@domain.com"
+            />
+            <label for="message">Your message:</label>
+            <textarea
+              class="form__message"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input class="form__submit" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="contact">
+        <h2 class="contact__heading">Contact</h2>
+        <p class="contact__text">EMAIL</p>
+        <p class="contact__email">info@travelsite.com</p>
+      </section>
+      <section class="hours">
+        <h2 class="hours__heading">Hours</h2>
+        <div class="hours__container">
+          <div class="hours__section">
+            <p class="hours__day">Monday - Friday</p>
+            <p class="hours__time">9:00 AM - 5:00 PM</p>
+          </div>
+          <div class="hours__section">
+            <p class="hours__day">Saturday</p>
+            <p class="hours__time">10:00 AM - 4:00 PM</p>
+          </div>
+          <div class="hours__section">
+            <p class="hours__day">Sunday</p>
+            <p class="hours__time">Closed</p>
+          </div>
+        </div>
+      </section>
+      <section class="social">
+        <h2 class="social__heading">Social</h2>
+        <img
+          class="social__icon"
+          src="../assets/Icons/icon-instagram.png"
+          alt="instagram"
+        />
+        <img
+          class="social__icon"
+          src="../assets/Icons/icon-facebook.png"
+          alt="facebook"
+        />
+        <img
+          class="social__icon"
+          src="../assets/Icons/icon-twitter.png"
+          alt="twitter"
+        />
+      </section>
+    </footer>
+  </body>
 </html>

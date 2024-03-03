@@ -102,6 +102,10 @@
         justify-content: center;
         &-section1{
             display: block; 
+            
+            &__image{
+                height: 300px;
+            }
         }
         &-section2{
             width: 42%;
@@ -113,15 +117,17 @@
 
 @include mediaQuery.desktop{
     .gstarted{
-        padding: 1rem 0rem;
-        justify-content: center;
+        padding: 2rem 6rem;
+        justify-content: space-between;
         &-section1{
             display: block; 
+            &__image{
+                height: 450px;
+            }
         }
         &-section2{
             width: 42%;
             align-items: flex-start;
-            padding-left: 5rem;
         }
     }
 }
