@@ -1,5 +1,6 @@
 @use "./partials/global";
 @use "./partials/media-query" as mediaQuery;
+@use "./partials/variables";
 
 .hawaii{
     background-image: url("../assets/Images/hawaii.jpg"); 
@@ -61,7 +62,7 @@
         flex-direction: column;
     }
     &__item{
-        background-color: #fefaf5;
+        background-color: variables.$bgColor;
         margin: 1rem;
         padding: 1rem;
     }

@@ -1,8 +1,9 @@
 @use "./partials/media-query" as mediaQuery;
 @use "./partials/global";
+@use "./partials/variables";
 
 .hero{
-    background-color: #FEFAF5;
+    background-color: variables.$bgColor;
     display: flex;
     height: auto;
     flex-direction: column-reverse;
@@ -11,7 +12,7 @@
     padding: 2rem 5rem;
     .hero-section1{
         text-align: left;
-        color: #335576;
+        color: variables.$blue;
         width: auto;
         padding: 0%;
         &__heading{
@@ -45,7 +46,7 @@
 .recommendations{
     padding: 1rem;
     &__heading{
-        color: #335576;
+        color: variables.$blue;
         margin-top: 0rem;
     }
     .destination{

@@ -1,12 +1,13 @@
 @use "./partials/global";
 @use "./partials/media-query" as mediaQuery;
+@use "./partials/variables";
 
 .gstarted{
-    background-color: #FEFAF5;
+    background-color: variables.$bgColor;
     padding: 2rem 6rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     &-section1{
@@ -26,17 +27,17 @@
         align-items: center;
     }
     &__heading{
-        color: #335576;
+        color: variables.$blue;
         font-size: 2rem;
         margin: 1rem 0rem;
     }
     &__text{
-        color: #335576;
+        color: variables.$blue;
         margin: 0rem;
     }
     label{
         font-size: 1.5rem;
-        color: #335576;
+        color: variables.$blue;
         margin-top: 1rem;
     }
     .form{
@@ -46,11 +47,11 @@
         margin-top: 1rem;
         &__destination{
             height: 3rem;
-            color: #335576;
-            background-color: #FEFAF5;
+            color: variables.$blue;
+            background-color: variables.$bgColor;
             width: 20rem;
             border-radius: 0.3rem;
-            border: 2px solid #335576;
+            border: 2px solid variables.$blue;
             width: 20rem;
             margin-top: 1rem;
             margin: 0rem;
@@ -59,20 +60,20 @@
         }
         &__text{
             height: 3rem;
-            color: #335576;
-            background-color: #FEFAF5;
+            color: variables.$blue;
+            background-color: variables.$bgColor;
             border-radius: 0.3rem;
-            border: 2px solid #335576;
+            border: 2px solid variables.$blue;
             width: 20rem;
             margin: 0rem;
             margin-top: 0.5rem;
             font-size: 1rem;
         }
         &__message{
-            color: #335576;
-            background-color: #FEFAF5;
+            color: variables.$blue;
+            background-color: variables.$bgColor;
             border-radius: 0.3rem;
-            border: 2px solid #335576;
+            border: 2px solid variables.$blue;
             width: 20rem;
             height: 9rem;
             margin: 0rem;
@@ -80,7 +81,7 @@
             font-size: 1rem;
         }
         &__submit{
-            background-color: #DB7A4E;
+            background-color: variables.$orange;
                 color: #FFFFFF;
                 border: 0;
                 border-radius: 100px;

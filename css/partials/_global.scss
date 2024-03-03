@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .btn {
-  background-color: #db7a4e;
+  background-color: variables.$orange;
   color: #ffffff;
   border-radius: 100px;
   text-align: center;
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  color: #335576;
+  color: variables.$blue;
   justify-content: space-between;
   align-items: center;
   padding: 0rem;
@@ -29,7 +29,7 @@
   }
   &__headinglink {
     text-decoration: none;
-    color: #335576;
+    color: variables.$blue;
     &:hover {
       filter: brightness(150%);
     }
@@ -57,19 +57,19 @@
 
     &--active {
       text-decoration: none;
-      border-left: 3px solid #db7a4e;
-      border-right: 3px solid #db7a4e;
+      border-left: 3px solid variables.$orange;
+      border-right: 3px solid variables.$orange;
     }
     &:hover {
       text-decoration: none;
-      border-left: 3px solid #335576;
-      border-right: 3px solid #335576;
+      border-left: 3px solid variables.$blue;
+      border-right: 3px solid variables.$blue;
     }
   }
 }
 .footer {
-  background-color: #fefaf5;
-  color: #335576;
+  background-color: variables.$bgColor;
+  color: variables.$blue;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -83,7 +83,7 @@
       margin-bottom: 1rem;
     }
     &__text {
-      color: #db7a4e;
+      color: variables.$orange;
       font-size: 0.7rem;
       text-transform: uppercase;
       font-weight: bold;
@@ -107,7 +107,7 @@
       padding-right: 2rem;
     }
     &__day {
-      color: #db7a4e;
+      color: variables.$orange;
       font-size: 0.7rem;
       text-transform: uppercase;
       margin-top: 0rem;
@@ -147,14 +147,14 @@
     &__link {
       &--active {
         text-decoration: underline;
-        text-decoration-color: #db7a4e;
+        text-decoration-color: variables.$orange;
         text-underline-offset: 0.6rem;
         text-decoration-thickness: 0.3rem;
         border: 0;
       }
       &:hover {
         text-decoration: underline;
-        color: #335576;
+        color: variables.$blue;
         text-underline-offset: 0.6rem;
         text-decoration-thickness: 0.3rem;
         border: 0;
